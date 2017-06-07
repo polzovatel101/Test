@@ -249,3 +249,58 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    #container{
+        width: 100%;
+    }
+    
+    #user .user__photo{
+        margin: 0 0 0 20px;
+    }
+    
+    #user .user__text{
+        width: 50%;
+        margin-top: 20px;
+    }
+    
+    #user .user__text .status{
+        position: inherit;
+        margin: 67px 0 10px -110px;
+        width: 133%;
+        padding: 10px;
+    }
+    
+    #message{
+        padding: 20px;
+    }
+    
+    
+    #message .message__header .like{
+        margin-left: 0;
+    }
+    
+    #message .message__item{
+        width: 100%;
+    }
+    
+    #services{
+        float: none;
+        width: 320px;
+        margin: 0 auto;
+    }
+    
+    #feedback form{
+        width: auto;
+    }
+    
+    #feedback form textarea{
+        width: 86%;
+    }
+    
+    #feedback form button{
+        margin-left: 4%;
+        padding: 15px 25px;
+    }
+
+}

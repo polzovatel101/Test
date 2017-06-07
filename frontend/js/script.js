@@ -59,6 +59,3 @@ window.onload = function () {
         comment.val(" ");
     }
 };
-
-
-
