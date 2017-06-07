@@ -1,7 +1,17 @@
 'use strict';
 
 window.onload = function () {
-    $('#button').on('click', function(){
+
+    $('body').keydown(function (e) {
+        if (e.ctrlKey && e.keyCode == 13) {
+            addComment();
+        }
+    });
+
+
+    $('#button').on('click', addComment());
+
+    function addComment(){
         var date = new Date();
         var comment = $("#comment");
         var month = date.getMonth();
@@ -47,7 +57,7 @@ window.onload = function () {
         }
         $('.message__header').after('<div class="message__item"><h2 class="message__item--name">Вася Пупкин</h2><span class="message__item--data">' + " " + date.getDate() + " " + month + " " + date.getFullYear()  + '</span><p class="message__item--message">' + comment.val() + '</p> </div>');
         comment.val(" ");
-    });
+    }
 };
 
 
