@@ -34,6 +34,8 @@ gulp.task('browser-sync', function() {
     });
     gulp.watch("./frontend/stylesheets/**/*.scss", ['sass']);
     gulp.watch("./frontend/js/*.js", ['js']);
+    gulp.watch("./frontend/images/*", ['image:optimization']);
+    gulp.watch("./frontend/fonts/*", ['font:optimize']);
     gulp.watch("./public/js/*.js").on('change', browserSync.reload);
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
@@ -55,11 +57,11 @@ gulp.task('font:optimize', function () {
         .pipe(fontmin({
             text: 'It is a 3.14zdec'
         }))
-        .pipe(gulp.dest('./public/fonts'));
+        .pipe(gulp.dest('./public/fonts/'));
 });
 
 gulp.task('js', ['uglify']);
 
-gulp.task('default', ['browser-sync', 'image:optimization']);
+gulp.task('default', ['sass', 'uglify', 'image:optimization', 'font:optimize', 'browser-sync']);
 
 
