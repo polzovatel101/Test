@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Test</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Title</title>
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
-<div id="container">
-    <div id="user">
-        <div class="user__photo"><img src="../public/images/avatar.jpg" alt="photo" id="avatar"></div>
-        <div class="user__text">
-            <h2 class="name">Вероника Ростова</h2>
-            <p class="profession">Менеджер по продажам</p>
-            <p class="status">Подберу для вас самые лучшие предложения. Мои услуги абсолютно</p>
+<div class="container">
+    <header id="header">
+        <div class="logo"><img src="public/images/logo.png" alt="logo"></div>
+        <nav>
+            <div class="nav__item"><a href="#header">Home</a></div>
+            <div class="nav__item"><a href="#services">Service</a></div>
+            <div class="nav__item"><a href="#">Portfolio</a></div>
+            <div class="nav__item"><a href="#team">Team</a></div>
+            <div class="nav__item"><a href="#">Blog</a></div>
+            <div class="nav__item"><a href="#footer">Contact</a></div>
+        </nav>
+    </header>
+    <div id="slider">
+        <div class="slide">
+            <h1>This is a main heading</h1>
+            <h4>Lorem Ipsum is simply dummy text of the printing   setting indu</h4>
+            <button>Learn More</button>
         </div>
     </div>
-    <div id="services" class="clearfix">
-        <h6 class="services__header">Услуг</h6>
+    <div id="team">
+        <h1>The Team</h1>
+        <div class="team__item">
+            <div class="team__item--photo"><img src="" alt=""></div>
+            <h3 class="team__item--name"></h3>
+            <p class="team__item--role"></p>
+            <span class="team__item--message"></span></div>
+        <div class="team__item">
+            <div class="team__item--photo"><img src="" alt=""></div>
+            <h3 class="team__item--name"></h3>
+            <p class="team__item--role"></p>
+            <span class="team__item--message"></span></div>
+        <div class="team__item">
+            <div class="team__item--photo"><img src="" alt=""></div>
+            <h3 class="team__item--name"></h3>
+            <p class="team__item--role"></p>
+            <span class="team__item--message"></span></div>
+        <div class="team__item">
+            <div class="team__item--photo"><img src="" alt=""></div>
+            <h3 class="team__item--name"></h3>
+            <p class="team__item--role"></p>
+            <span class="team__item--message"></span></div>
+    </div>
+    <div id="services">
         <div class="services__item">
-            <div class="services__item--color"></div>
-            <span class="services__item--name">Ручное бронирование</span>
-            <span class="services__item--number">11</span>
+            <p class="services__item--type">Basic</p>
+            <p class="services__item--cost">$5.01/ Month</p>
+            <p class="services__item--text">Lorem ipsum </p>
+            <p class="services__item--text">Dolor sit amet, consect</p>
+            <p class="services__item--text">Adipiscing elit</p>
+            <p class="services__item--text">Proin commodo turpis</p>
+            <p class="services__item--text">lacus pulvinarvel </p>
+            <p class="services__item--text">Prnare nisi pretium.</p>
+            <button class="services__item--buy">Buy now</button>
         </div>
         <div class="services__item">
-            <div class="services__item--color"></div>
-            <span class="services__item--name">Пакетные туры</span>
-            <span class="services__item--number">3</span>
+            <p class="services__item--type">Pro</p>
+            <p class="services__item--cost">$10.01/ Month</p>
+            <p class="services__item--text">Lorem ipsum </p>
+            <p class="services__item--text">Dolor sit amet, consect</p>
+            <p class="services__item--text">Adipiscing elit</p>
+            <p class="services__item--text">Proin commodo turpis</p>
+            <p class="services__item--text">lacus pulvinarvel </p>
+            <p class="services__item--text">Prnare nisi pretium.</p>
+            <button class="services__item--buy">Buy now</button>
         </div>
         <div class="services__item">
-            <div class="services__item--color"></div>
-            <span class="services__item--name">Отели</span>
-            <span class="services__item--number">1</span>
-        </div>
-        <div class="services__result">
-            <h2 class="services__result--header">Всего</h2>
-            <span class="services__result--number">15</span>
-        </div>
-    </div>
-    <div id="message">
-        <div class="message__header">
-            <span class="message__header--last">Последние отзывы</span>
-            <a href="#" class="message__header--all">Все отзывы</a>
-            <div class="like">131</div>
-            <div class="comment">14</div>
-        </div>
-        <div class="message__item">
-            <h2 class="message__item--name">Самуил</h2>
-            <span class="message__item--data">13 октября 2011</span>
-            <p class="message__item--message">Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
-        </div>
-        <div class="message__item">
-            <h2 class="message__item--name">Лилия Семёновна</h2>
-            <span class="message__item--data">14 октября 2011</span>
-            <p class="message__item--message">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
-                стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли
-                бриллиантами?</p>
-        </div>
-        <div class="message__item">
-            <h2 class="message__item--name">Лилия Семёновна</h2>
-            <span class="message__item--data">14 октября 2011</span>
-            <p class="message__item--message">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
-                стабилизирует кинетический момент?</p>
+            <p class="services__item--type">Premium</p>
+            <p class="services__item--cost">$20.01/ Month</p>
+            <p class="services__item--text">Lorem ipsum </p>
+            <p class="services__item--text">Dolor sit amet, consect</p>
+            <p class="services__item--text">Adipiscing elit</p>
+            <p class="services__item--text">Proin commodo turpis</p>
+            <p class="services__item--text">lacus pulvinarvel </p>
+            <p class="services__item--text">Prnare nisi pretium.</p>
+            <button class="services__item--buy">Buy now</button>
         </div>
     </div>
-    <div id="feedback">
-        <form action="#">
-            <label>
-                <textarea id="comment"></textarea>
-            </label>
-            <button id="button">Написать консультанту</button>
-        </form>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="../public/js/script.js"></script>
+    <footer id="footer">
+        <h2 class="footer__header"></h2>
+        <div class="footer__info">
+            <p class="footer__info--motto"></p>
+            <span class="footer__info--text"></span>
+            <div class="social_icons"></div>
+            <div class="contacts">
+                <p class="contacts__author"></p>
+                <p class="contacts__number"></p>
+                <p class="contacts__email"></p>
+            </div>
+        </div>
+        <div class="footer__feedback">
+            <form action="#" >
+                <input type="text" class="footer__feedback--name" required pattern="[A-Za-zА-Яа-яЁё]+[A-Za-zА-Яа-яЁё]" title="">
+                <input type="email" class="footer__feedback--email" required pattern="\S+@[a-z]+.[a-z]+" title="">
+                <input type="text" class="footer__feedback--message" required title="">
+                <input type="submit" class="footer__feedback--submit">Send
+            </form>
+        </div>
+    </footer>
+    <script src="public/js/script.js"></script>
 </div>
 </body>
 </html>
