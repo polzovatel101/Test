@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--<link rel="stylesheet" href="frontend/stylesheets/utilities/_swiper.min.scss">-->
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
@@ -22,36 +23,50 @@
         </nav>
     </div>
 </header>
-<div id="slider">
-    <div class="slide">
-        <h1>This is a main heading</h1>
-        <h4>Lorem Ipsum is simply dummy text of the printing setting indu</h4>
-        <button>Learn More</button>
+<div id="slider" class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="slide swiper-slide">
+            <h1>This is a main heading</h1>
+            <h4>Lorem Ipsum is simply dummy text of the printing setting indu</h4>
+            <button>Learn More</button>
+        </div>
+        <div class="slide swiper-slide">
+            <h1>This is a main heading</h1>
+            <h4>Lorem Ipsum is simply dummy text of the printing setting indu</h4>
+            <button>Learn More</button>
+        </div>
+        <div class="slide swiper-slide">
+            <h1>This is a main heading</h1>
+            <h4>Lorem Ipsum is simply dummy text of the printing setting indu</h4>
+            <button>Learn More</button>
+        </div>
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 </div>
 <div id="team">
     <h1>The Team</h1>
     <div class="team__item--container">
         <div class="team__item">
-            <div class="team__item--photo"><img src="" alt=""></div>
+            <div class="team__item--photo"><img src="public/images/red_plus.png" alt=""></div>
             <h3 class="team__item--name">Adrian Thomas</h3>
             <p class="team__item--role">CEO & Founder</p>
             <span class="team__item--message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</span>
         </div>
         <div class="team__item">
-            <div class="team__item--photo"><img src="" alt=""></div>
+            <div class="team__item--photo"><img src="public/images/red_plus.png" alt=""></div>
             <h3 class="team__item--name">Narate Ketram</h3>
             <p class="team__item--role">Creative Director</p>
             <span class="team__item--message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</span>
         </div>
         <div class="team__item">
-            <div class="team__item--photo"><img src="" alt=""></div>
+            <div class="team__item--photo"><img src="public/images/red_plus.png" alt=""></div>
             <h3 class="team__item--name">Fernando Comet</h3>
             <p class="team__item--role">CEO & Founder</p>
             <span class="team__item--message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</span>
         </div>
         <div class="team__item">
-            <div class="team__item--photo"><img src="" alt=""></div>
+            <div class="team__item--photo"><img src="public/images/red_plus.png" alt=""></div>
             <h3 class="team__item--name">Adedayo saheed</h3>
             <p class="team__item--role">Creative Director</p>
             <span class="team__item--message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</span>
@@ -124,8 +139,9 @@
                     <input type="text" class="footer__feedback--name" required
                            pattern="[A-Za-zА-Яа-яЁё]+[A-Za-zА-Яа-яЁё]"
                            title=""
-                    placeholder="Name">
-                    <input type="email" class="footer__feedback--email" required pattern="\S+@[a-z]+.[a-z]+" title="" placeholder="Email ">
+                           placeholder="Name">
+                    <input type="email" class="footer__feedback--email" required pattern="\S+@[a-z]+.[a-z]+" title=""
+                           placeholder="Email ">
                     <input type="text" class="footer__feedback--message" required title="" placeholder="Message">
                     <input type="submit" class="footer__feedback--submit" content="Send">
                 </form>
@@ -133,6 +149,7 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="frontend/js/swiper.min.js"></script>
 <script type="text/javascript" src="public/js/script.js"></script>
 </body>
 </html>

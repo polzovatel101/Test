@@ -45,6 +45,4 @@ fabric.properties
 
 node_modules/
 
-public/
-
 .idea/

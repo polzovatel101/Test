@@ -1,0 +1,1 @@
+"use strict";window.onload=function(){new Swiper(".swiper-container",{nextButton:".swiper-button-next",prevButton:".swiper-button-prev",spaceBetween:0,loop:!0})};

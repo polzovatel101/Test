@@ -84,6 +84,17 @@
                 background: #eeeef0;
             }
 
+            .team__item--photo img{
+                display: none;
+                margin: 0 auto;
+                margin-top: calc(50% - 21px);
+            }
+            
+            .team__item--photo:hover img{
+                display: block;
+            }
+
+
             .team__item--name {
                 margin-top: 70px;
                 font-size: 22px;
