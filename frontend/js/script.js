@@ -11,6 +11,22 @@ window.onload = function () {
         spaceBetween: 0,
         loop: true
     });
+
+    var buttonBuyNow = document.getElementsByClassName('buy_now');
+    for (var i = 0; i < buttonBuyNow.length; i++) {
+        buttonBuyNow[i].addEventListener("mouseenter", function () {
+            var type = this.parentElement.parentElement.getElementsByClassName('services__item--type');
+            for(var j = 0; j < type.length; j++) {
+                type[j].style.backgroundColor = '#49cbcd';
+            }
+        });
+        buttonBuyNow[i].addEventListener("mouseleave", function () {
+            var type = this.parentElement.parentElement.getElementsByClassName('services__item--type');
+            for(var j = 0; j < type.length; j++) {
+                type[j].style.backgroundColor = '#485460';
+            }
+        });
+    }
 };
 
 

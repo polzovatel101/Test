@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Title</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
@@ -84,7 +84,7 @@
             <p class="services__item--text">lacus pulvinarvel </p>
             <p class="services__item--text">Prnare nisi pretium.</p>
             <div class="services__item--buy">
-                <button>Buy now</button>
+                <button class="buy_now">Buy now</button>
             </div>
         </div>
         <div class="services__item">
@@ -97,7 +97,7 @@
             <p class="services__item--text">lacus pulvinarvel </p>
             <p class="services__item--text">Prnare nisi pretium.</p>
             <div class="services__item--buy">
-                <button>Buy now</button>
+                <button class="buy_now">Buy now</button>
             </div>
         </div>
         <div class="services__item">
@@ -110,7 +110,7 @@
             <p class="services__item--text">lacus pulvinarvel </p>
             <p class="services__item--text">Prnare nisi pretium.</p>
             <div class="services__item--buy">
-                <button>Buy now</button>
+                <button class="buy_now">Buy now</button>
             </div>
         </div>
     </div>
@@ -141,8 +141,8 @@
                            placeholder="Name">
                     <input type="email" class="footer__feedback--email" required pattern="\S+@[a-z]+.[a-z]+" title="Enter your email"
                            placeholder="Email ">
-                    <input type="text" class="footer__feedback--message" required title="Enter your message" placeholder="Message">
-                    <input type="submit" class="footer__feedback--submit" content="Send">
+                    <textarea class="footer__feedback--message" required title="Enter your message" placeholder="Message"></textarea>
+                    <button type="submit" class="footer__feedback--submit" content="Send">Send</button>
                 </form>
             </div>
         </div>

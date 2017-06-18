@@ -163,13 +163,15 @@
                 background-color: #f8f9fb;
 
                 button {
-                    padding: 10px 50px;
+                    padding: 9px 49px;
                     border: 1px solid transparent;
                     border-radius: 3px;
                     background-color: rgb(120, 132, 146);
                     font-size: 17px;
                     color: rgb(255, 255, 255);
                     text-align: center;
+                    outline: none;
+                    font-weight: 400;
                 }
 
                 button:hover{
