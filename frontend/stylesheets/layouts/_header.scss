@@ -34,8 +34,29 @@
                 }
             }
         }
+
+        .navbar__toggle{
+            display: none;
+        }
     }
+
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 650px) {
+    #header .container nav{
+        display: none;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    #header .container nav .nav__item{
+        padding: 10px 10px;
+    }
+
+    #header .container .navbar__toggle{
+        display: inline-block;
+        color: #49cbcd;
+        margin: 30px 10px 0 0;
+        font-size: 36px;
+    }
 }

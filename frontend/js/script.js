@@ -16,17 +16,28 @@ window.onload = function () {
     for (var i = 0; i < buttonBuyNow.length; i++) {
         buttonBuyNow[i].addEventListener("mouseenter", function () {
             var type = this.parentElement.parentElement.getElementsByClassName('services__item--type');
-            for(var j = 0; j < type.length; j++) {
+            for (var j = 0; j < type.length; j++) {
                 type[j].style.backgroundColor = '#49cbcd';
             }
         });
         buttonBuyNow[i].addEventListener("mouseleave", function () {
             var type = this.parentElement.parentElement.getElementsByClassName('services__item--type');
-            for(var j = 0; j < type.length; j++) {
+            for (var j = 0; j < type.length; j++) {
                 type[j].style.backgroundColor = '#485460';
             }
         });
     }
+
+    var navBarToggle = document.getElementsByClassName('navbar__toggle');
+    navBarToggle[0].addEventListener("click", function () {
+        var navDisplay = document.getElementsByTagName('nav')[0].style.display;
+        console.log(document.getElementsByTagName('nav')[0].style);
+        if(navDisplay === ''){
+            document.getElementsByTagName('nav')[0].style.display = 'block';
+        } else {
+            document.getElementsByTagName('nav')[0].style.display = '';
+        }
+    });
+
+
 };
-
-

@@ -6,7 +6,7 @@ body{
 
 .container, .team__item--container {
     max-width: 1170px;
-    min-width: 320px;
+    min-width: 290px;
     width: 100%;
     margin: 0 auto;
 }
@@ -28,4 +28,14 @@ body{
     width: 52px;
     height: 51px;
     left: 2%;
+}
+
+@media screen and (max-width: 804px) {
+    .logo{
+        margin-left: 10px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
 }
